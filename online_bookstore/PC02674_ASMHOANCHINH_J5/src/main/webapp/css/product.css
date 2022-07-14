@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.banner {
+    top: 20px;
+    left: -8px;
+    width: 150px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding-right: 4px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: linear-gradient(to left, #f12711, #f5af19);
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    border-top: 7px solid currentColor;
+    border-left: 8px solid transparent;
+    filter: brightness(40%);
+}
+
+
+#image {
+    min-height: 25px;
+    margin: 0 2.5%; 
+}
+
+svg {
+    width: 24px;
+    margin: 0 15px;
+}
+
+.button_dh {
+    list-style: none;
+}
+
+#box {
+    transition: 1;
+}
+
+
+#box .card {
+    width: 400px;
+    height: 450px; 
+}
+
+.anh {
+    max-width: 300px;
+    max-height: 250px;
+}

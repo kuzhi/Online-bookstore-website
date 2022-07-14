@@ -1,0 +1,115 @@
+@charset "utf-8";
+:root {
+    --primary-color: #122ce9;
+    --white-color: #fff;
+    --text-color: #707070;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 100%; */
+}
+
+@keyframes showAlert {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: bignoodletitling;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.banner-area{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(preloader.gif);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #ebebeb;
+    height: 1500px;
+}
+.product-view-quantity-box-block {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    height: 32px;
+}
+.product-view-quantity-box-block a.btn-subtract-qty {
+    padding: 0 8px 0 16px;
+}
