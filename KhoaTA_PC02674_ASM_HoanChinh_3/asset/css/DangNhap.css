@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.form{
+    margin-top: 10%;
+
+}
+.row1{
+    background: white;
+    box-shadow: 12px 12px 22px grey;
+}
+
+img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btn:hover{
+    background-color: lemonchiffon;
+    color: black;
+    font-weight: bold;
+    
+
+}
+
+
+.btn-1{
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+
+.doiMatKhau:hover{
+    
+    text-decoration: underline;
+}
+.doiMatKhau{
+   
+    text-decoration: none;
+}

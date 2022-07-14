@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "chi dan",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+    
+  },
+  "author": "",
+  "license": "ISC"
+}

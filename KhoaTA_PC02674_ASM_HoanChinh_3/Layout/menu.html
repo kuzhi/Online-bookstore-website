@@ -1,0 +1,91 @@
+<div class="header-wrapper">
+    <div class="row">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand"  ng-click="trangchu()"  href="#!product">
+                    <img src="asset/img/FPT_Polytechnic.png" width="130px" alt="">
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto" style="margin-left: 12px;">
+                        <li class="nav-item">
+                            <a id="list__item" class="menu-item nav-link" ng-click="gioiThieu()" href="#!intro" >Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="list__item" class="menu-item nav-link" ng-click="lienHe()" href="#!contact" >Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="list__item" class="menu-item nav-link" ng-click="gopY()" href="#!gopy" >Góp ý</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="list__item" class="menu-item nav-link" ng-click="hoiDap()" href="#!hoidap" >Hỏi đáp</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+
+                        <!-- Chưa đăng nhập -->
+                        <div ng-if="clickLogin">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    style="color: black; font-weight: 600 !important; font-size: 1.1rem;"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Tài khoản
+                                </a>
+                                <ul class="dropdown-menu list-item-user" style="margin-top: -10px;"
+                                    aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#!login" ng-click="login()">Đăng nhập</a></li>
+                                    <li><a class="dropdown-item" href="#!signup" ng-click="signup()">Đăng ký</a></li>
+                                    <li><a class="dropdown-item" href="#!forgetPassword"
+                                            ng-click="forgetPassword()">Quên mật khẩu</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <!-- Đã đăng nhập -->
+                        <div ng-if="!clickLogin">
+                            <li class="nav-item dropdown d-flex">
+                                    <img src="asset/img/user.jpg" class="rounded-circle" width="45px" alt="">
+                                    <a id="user" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Cần thay đổi -->
+                                    {{student.username}}
+                                </a>
+                                <ul class="dropdown-menu list-item-user" style="margin-top: -10px;"
+                                    aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#!changePassword" ng-click="doiMatKhau()">Đổi mật
+                                            khẩu</a></li>
+                                    <li><a class="dropdown-item" href="#!adminHsCanhan" ng-if="Admin" ng-click="adminhsCaNhan()">Hồ sơ tất cả</a></li>        
+                                    <li><a class="dropdown-item" href="#!hsCanhan" ng-if="!Admin" ng-click="hsCaNhan()">Hồ sơ cá
+                                            nhân</a></li>
+                                    <li><a class="dropdown-item" ng-click="dangXuat()" href="#!product">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row header-banner">
+        <div class="header-banner-left flex-column col">
+            <div class="content-banner d-flex justify-content-center align-items-center" style="margin-top: 42px;">
+                <img class="" src="asset/img/background_header1.png" alt="ảnh nền 1" style="width: 500px;">
+            </div>
+            <div class="content-banner  d-flex justify-content-center align-items-center" style="margin-bottom: 90px;">
+                <span class="fs-1 fw-bold text-secondary">THI ONLINE TRỰC TUYẾN</span>
+            </div>
+        </div>
+        <div class="header-banner-right flex-column col">
+            <div class="content-banner  d-flex justify-content-center align-items-center">
+                <img src="asset/img/background_header2.png" alt="ảnh nền 2" style="width: 600px; padding-top: 50px;">
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+</div>
