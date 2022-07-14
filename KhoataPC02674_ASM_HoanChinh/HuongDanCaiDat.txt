@@ -1,8 +1,0 @@
-1. Chay database.sql  de tao CSDL QuanLyChiTieu
-2. Ðat mat khau sa cua SQL Server là 1
-3. Chay file ChiTieu_Setup (chú ý môi truong JDK1.8+)
-4. Chon Run as Administrator
-
-
-
-Link video minh hoa: https://youtu.be/WK40gDUs7aU
